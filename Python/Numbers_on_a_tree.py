@@ -7,4 +7,3 @@ for c in path:
 
 print((1 << (h + 1)) - cur)
 
-#test
