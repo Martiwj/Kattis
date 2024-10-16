@@ -2,15 +2,15 @@ n, y = map(int, input().split())
 
 
 seen = set()
-output = []
-for i in range(y):
+ignored = []
+for _ in range(y):
     seen.add(int(input()))
     
-for i in range(n):
-    if not i in seen:
-        output.append(i)
+for obstacle in range(n):
+    if not obstacle in seen:
+        ignored.append(obstacle)
         
     
-print("\n".join([str(i) for i in output]))
+print("\n".join([str(i) for i in ignored]))
 print(f"Mario got {len(seen)} of the dangerous obstacles.")
     
